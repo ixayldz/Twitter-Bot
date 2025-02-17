@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Twitter ve Gemini AI Entegrasyonlu Web Uygulaması
 
-## Getting Started
+Bu proje, Twitter API ve Google'ın Gemini AI servisini kullanan modern bir web uygulamasıdır.
 
-First, run the development server:
+## 🚀 Özellikler
 
+- Twitter entegrasyonu
+- Gemini AI servisi entegrasyonu
+- Kullanıcı profil yönetimi
+- Güvenli rota sistemi
+- Modern ve duyarlı kullanıcı arayüzü
+
+## 🛠️ Teknolojiler
+
+### Frontend
+- React
+- TypeScript
+- Modern UI/UX tasarımı
+
+### Backend
+- Node.js
+- Express.js
+- Twitter API
+- Gemini AI API
+
+## 📦 Kurulum
+
+1. Projeyi klonlayın:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone [repo-url]
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Bağımlılıkları yükleyin:
+```bash
+# Backend bağımlılıkları
+npm install
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# Frontend bağımlılıkları
+cd frontend
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. Ortam değişkenlerini ayarlayın:
+- `.env.example` dosyasını `.env` olarak kopyalayın
+- Gerekli API anahtarlarını ekleyin:
+  - Twitter API anahtarları
+  - Gemini AI API anahtarı
 
-## Learn More
+4. Uygulamayı başlatın:
+```bash
+# Backend'i başlatın
+npm start
 
-To learn more about Next.js, take a look at the following resources:
+# Frontend'i başlatın (yeni bir terminal'de)
+cd frontend
+npm start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🔧 Ortam Değişkenleri
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```env
+TWITTER_API_KEY=your_twitter_api_key
+TWITTER_API_SECRET=your_twitter_api_secret
+TWITTER_ACCESS_TOKEN=your_access_token
+TWITTER_ACCESS_SECRET=your_access_secret
+GEMINI_API_KEY=your_gemini_api_key
+```
 
-## Deploy on Vercel
+## 📝 Kullanım
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Web uygulamasına giriş yapın
+2. Twitter hesabınızı bağlayın
+3. Gemini AI özelliklerini kullanmaya başlayın
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🤝 Katkıda Bulunma
+
+1. Bu projeyi fork edin
+2. Feature branch oluşturun (`git checkout -b feature/amazing-feature`)
+3. Değişikliklerinizi commit edin (`git commit -m 'feat: Add amazing feature'`)
+4. Branch'inizi push edin (`git push origin feature/amazing-feature`)
+5. Pull Request oluşturun
+
+## 📄 Lisans
+
+Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICENSE) dosyasına bakın. 
