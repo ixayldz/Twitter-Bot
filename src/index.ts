@@ -72,7 +72,7 @@ let currentTopicIndex = 0;
 async function generateTweetContent(topic: string, level: string, description: string): Promise<string> {
   try {
     const response = await axios.post(GEMINI_API_URL!, {
-      prompt: `Lütfen "${topic}" konusu hakkında, "${description}" ifadesini de içeren, ${level} seviye, öğretici ve kronolojik bir tweet oluştur. İçerik, kısa ama bilgi verici olsun.`,
+      prompt: `Lütfen '${topic}' konusu hakkında, '${description}' ifadesini de içeren, ${level} seviye, öğretici ve kronolojik bir tweet oluştur. İçerik, kısa ama bilgi verici olsun.`,
       max_tokens: 150
     }, {
       headers: {
@@ -82,7 +82,7 @@ async function generateTweetContent(topic: string, level: string, description: s
     });
     return response.data.text.trim();
   } catch (error) {
-    console.error("Gemini API çağrısında hata:", error);
+    console.error('Gemini API çağrısında hata:', error);
     return `${topic} - ${description}. Detaylar için takipte kalın.`;
   }
 }
@@ -103,9 +103,9 @@ async function postScheduledTweet(scraper: Scraper): Promise<void> {
 
   try {
     await scraper.sendTweet(tweetContent);
-    console.log("Tweet gönderildi:", tweetContent);
+    console.log('Tweet gönderildi:', tweetContent);
   } catch (error) {
-    console.error("Tweet gönderme hatası:", error);
+    console.error('Tweet gönderme hatası:', error);
   }
   
   currentTopicIndex++;
@@ -135,7 +135,7 @@ async function handleSocialInteractions(scraper: Scraper): Promise<void> {
       }
     }
   } catch (error) {
-    console.error("Trend tweet arama hatası:", error);
+    console.error('Trend tweet arama hatası:', error);
   }
 }
 
@@ -151,9 +151,9 @@ async function handleSocialInteractions(scraper: Scraper): Promise<void> {
       process.env.TWITTER_ACCESS_TOKEN!,
       process.env.TWITTER_ACCESS_TOKEN_SECRET!
     );
-    console.log("Twitter hesabına giriş yapıldı. (Profil: 'Phd. AI Profile')");
+    console.log('Twitter hesabına giriş yapıldı. (Profil: \'Phd. AI Profile\')');
   } catch (error) {
-    console.error("Twitter giriş hatası:", error);
+    console.error('Twitter giriş hatası:', error);
     process.exit(1);
   }
 
@@ -167,5 +167,5 @@ async function handleSocialInteractions(scraper: Scraper): Promise<void> {
     await handleSocialInteractions(scraper);
   });
 
-  console.log("Agent çalışmaya başladı. Otomatik tweet ve etkileşim modülleri aktif.");
+  console.log('Agent çalışmaya başladı. Otomatik tweet ve etkileşim modülleri aktif.');
 })(); 
