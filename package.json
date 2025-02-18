@@ -3,13 +3,17 @@
   "version": "1.0.0",
   "description": "Twitter Bot with Gemini AI Integration",
   "main": "dist/index.js",
+  "engines": {
+    "node": "18.x"
+  },
   "scripts": {
     "start": "node dist/index.js",
     "dev": "ts-node src/index.ts",
     "build": "tsc",
     "watch": "tsc -w",
     "lint": "eslint . --ext .js,.ts",
-    "test": "jest"
+    "test": "jest",
+    "vercel-build": "npm run build"
   },
   "dependencies": {
     "agent-twitter-client": "^0.0.18",
