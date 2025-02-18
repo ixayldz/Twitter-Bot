@@ -18,49 +18,49 @@ interface Topic {
 // AI/ML konu dizisi
 const aiMlTopics: Topic[] = [
   {
-    topic: "Giriş: Yapay Zeka ve Makine Öğrenmesine Genel Bakış",
-    level: "temel",
-    description: "Yapay zekanın (AI) ve makine öğrenmesinin (ML) temel tanımlarını, amaçlarını ve günlük yaşamda nasıl yer aldıklarını anlat."
+    topic: 'Giriş: Yapay Zeka ve Makine Öğrenmesine Genel Bakış',
+    level: 'temel',
+    description: 'Yapay zekanın (AI) ve makine öğrenmesinin (ML) temel tanımlarını, amaçlarını ve günlük yaşamda nasıl yer aldıklarını anlat.'
   },
   {
-    topic: "Yapay Zeka Temelleri: Makinelerin Öğrenmeye Başlaması",
-    level: "temel",
-    description: "Bilgisayarların veri ile öğrenme süreçlerine nasıl başladığı, algoritmaların ilk temelleri."
+    topic: 'Yapay Zeka Temelleri: Makinelerin Öğrenmeye Başlaması',
+    level: 'temel',
+    description: 'Bilgisayarların veri ile öğrenme süreçlerine nasıl başladığı, algoritmaların ilk temelleri.'
   },
   {
-    topic: "Makine Öğrenmesi Nedir? Basit Tanımlar ve Örnekler",
-    level: "temel",
-    description: "ML'nin ne olduğu, örnekler üzerinden basit anlatımı. Verilerden öğrenme ve örüntü tanıma kavramları."
+    topic: 'Makine Öğrenmesi Nedir? Basit Tanımlar ve Örnekler',
+    level: 'temel',
+    description: 'ML\'nin ne olduğu, örnekler üzerinden basit anlatımı. Verilerden öğrenme ve örüntü tanıma kavramları.'
   },
   {
-    topic: "Yapay Zeka Tarihi: İlk Denemeler ve 1950'ler",
-    level: "orta",
-    description: "AI'nin ilk adımları, Turing Testi, erken bilgisayar deneyleri ve temel kavramların oluşumu."
+    topic: 'Yapay Zeka Tarihi: İlk Denemeler ve 1950\'ler',
+    level: 'orta',
+    description: 'AI\'nin ilk adımları, Turing Testi, erken bilgisayar deneyleri ve temel kavramların oluşumu.'
   },
   {
-    topic: "Makine Öğrenmesinin Tarihi: İstatistiksel Yöntemlerden İlk Başarılar",
-    level: "orta",
-    description: "ML'nin evrimi; istatistiksel yöntemlerin ve ilk deneysel uygulamaların tarihçesi."
+    topic: 'Makine Öğrenmesinin Tarihi: İstatistiksel Yöntemlerden İlk Başarılar',
+    level: 'orta',
+    description: 'ML\'nin evrimi; istatistiksel yöntemlerin ve ilk deneysel uygulamaların tarihçesi.'
   },
   {
-    topic: "Derin Öğrenmeye Giriş: Sinir Ağlarının Temelleri",
-    level: "ileri",
-    description: "Yapay sinir ağlarının çalışma prensipleri, temel mimariler ve derin öğrenmenin ortaya çıkışı."
+    topic: 'Derin Öğrenmeye Giriş: Sinir Ağlarının Temelleri',
+    level: 'ileri',
+    description: 'Yapay sinir ağlarının çalışma prensipleri, temel mimariler ve derin öğrenmenin ortaya çıkışı.'
   },
   {
-    topic: "Modern AI Modelleri: Transformer'lar ve Yeni Yaklaşımlar",
-    level: "ileri",
-    description: "Günümüzde öne çıkan AI modelleri; özellikle transformer mimarisi ve büyük dil modellerinin çalışma prensipleri."
+    topic: 'Modern AI Modelleri: Transformer\'lar ve Yeni Yaklaşımlar',
+    level: 'ileri',
+    description: 'Günümüzde öne çıkan AI modelleri; özellikle transformer mimarisi ve büyük dil modellerinin çalışma prensipleri.'
   },
   {
-    topic: "Günümüz Uygulamaları: Görü, Ses, Dil ve Daha Fazlası",
-    level: "ileri",
-    description: "Modern AI'nin pratik uygulamaları: görüntü işleme, ses tanıma, doğal dil işleme gibi alanlardaki örnekler."
+    topic: 'Günümüz Uygulamaları: Görü, Ses, Dil ve Daha Fazlası',
+    level: 'ileri',
+    description: 'Modern AI\'nin pratik uygulamaları: görüntü işleme, ses tanıma, doğal dil işleme gibi alanlardaki örnekler.'
   },
   {
-    topic: "Geleceğe Bakış: AI/ML'nin Evrimi, Etik ve Gelecek Trendler",
-    level: "phd",
-    description: "AI ve ML'nin geleceği, olası gelişmeler, etik sorular ve teknolojinin toplumsal etkileri."
+    topic: 'Geleceğe Bakış: AI/ML\'nin Evrimi, Etik ve Gelecek Trendler',
+    level: 'phd',
+    description: 'AI ve ML\'nin geleceği, olası gelişmeler, etik sorular ve teknolojinin toplumsal etkileri.'
   }
 ];
 
